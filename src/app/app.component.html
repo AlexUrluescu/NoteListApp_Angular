@@ -1,13 +1,53 @@
-<div class="contenedor">
-  <div class="title">
-      <h2>{{title}}</h2>
-  </div>
-  <div *ngFor = "let nota of notes" class="content">
-    <div class="noteBox">
-      <p>Titlu: {{nota.title}}</p>
-      <p>Content: {{nota.content}}</p>
-      <p>Data: {{nota.date}}</p>
-      <p>Prioritate: {{nota.priority}}</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/b5789c444f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <div class="contenedor">
+    <div class="title">
+        <h2>{{title}}</h2>
     </div>
+    <div class="contenedor-content">
+      <div *ngFor = "let nota of notes" class="content">
+        <div class="noteBox">
+          <div class="noteBox-info">
+            <div class="noteBox-title">
+              <p>Titlu: {{nota.title}}</p>
+            </div>
+  
+            <div class="noteBox-date">
+              <span id="clock" class="material-symbols-outlined">
+                schedule
+                </span>
+              <p>Data: {{nota.date}}</p>
+            </div>
+          </div>
+         
+          
+          <div class="noteBox-content">
+            <p>Content: {{nota.content}}</p>
+          </div>
+          
+          
+          
+          <div class="noteBox-priority">
+            <p>Prioritate: {{nota.priority}}</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
   </div>
-</div>
+</body>
+</html>
+
+
+
+
