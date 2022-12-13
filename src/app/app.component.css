@@ -1,0 +1,14 @@
+.contenedor{
+    background-color: red;
+}
+
+.title{
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 30px;
+}
+
+.noteBox{
+    background-color: azure;
+    width: 500px;
+}
