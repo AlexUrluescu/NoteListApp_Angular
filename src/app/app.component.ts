@@ -10,8 +10,8 @@ export class AppComponent {
   title = 'NoteListApp';
 
   notes:Note[] = [
-      new Note("Sunat Contabila", "Trebuie sa o sun pe contabila la ora 12:00", "14.12.2022", "important"),
-      new Note("Mers la Avocat", "Trebuie sa ducem niste acte", "15.12.2022", "nu e graba")
+      new Note("Sunat Contabila", "Trebuie sa o sun pe contabila la ora 12:00", "14.12.2022", "Hight"),
+      new Note("Mers la Avocat", "Trebuie sa ducem niste acte", "15.12.2022", "Low")
 
   ]
 }

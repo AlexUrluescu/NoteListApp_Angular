@@ -18,27 +18,35 @@
         <div class="noteBox">
           <div class="noteBox-info">
             <div class="noteBox-title">
-              <p>Titlu: {{nota.title}}</p>
+              <span id="titleIcon" class="material-symbols-outlined">
+                where_to_vote
+                </span>
+              <p>{{nota.title}}</p>
             </div>
   
             <div class="noteBox-date">
               <span id="clock" class="material-symbols-outlined">
                 schedule
                 </span>
-              <p>Data: {{nota.date}}</p>
+              <p>{{nota.date}}</p>
             </div>
           </div>
          
           
           <div class="noteBox-content">
-            <p>Content: {{nota.content}}</p>
+            <p>{{nota.content}}</p>
           </div>
           
           
+
+          <div class="noteBox-ct-priority">
           
-          <div class="noteBox-priority">
-            <p>Prioritate: {{nota.priority}}</p>
+              <p>Prioritate: {{nota.priority}}</p>
+              <input id="btnDone" type="button" value="Done">
+            
           </div>
+          
+          
           
         </div>
       </div>
